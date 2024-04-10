@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Star Wars : L'histoire complète</title>
+    <meta name="description" content="Le site le plus complet au sujet de Star Wars La Guerre des étoiles,
+    une épopée cinématographique de science-fiction créée par George Lucas,
+    considérée comme un élément phare du space opera">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="main__header">
+      <nav>
+        <ul class="main__menu-list">
+          <li class="main__menu-item"><a href="#">Le côté lumineux</a></li>
+          <li class="main__menu-item"><a href="#">Le côté obscur</a></li>
+          <li class="main__menu-item"><a href="#">L'empire</a></li>
+          <li class="main__menu-item"><a href="#">Les Droïdes</a></li>
+          <li class="main__menu-item"><a href="#">Les Ewoks</a></li>
+          <li class="main__menu-item"><a href="#">Jabba le Hutt</a></li>
+        </ul>
+        <div class="mobile__menu">
+          <div class="mobile__menu-btn">
+            <span></span>
+          </div>
+          <ul>
+            <li><a href="#">Le côté lumineux</a></li>
+            <li><a href="#">Le côté obscur</a></li>
+            <li><a href="#">L'empire</a></li>
+            <li><a href="#">Les Droïdes</a></li>
+            <li><a href="#">Les Ewoks</a></li>
+            <li><a href="#">Jabba le Hutt</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+      <!-- LANDING CONTENT -->
+    <main class="home__wrapper">
+      <section class="home__intro-section">
+        <div id="bgImg1">
+          <img id="elem1" class="home__intro-bg parallax" 
+              src="<%= require('./assets/img/header-bg.png') %>" 
+              srcset="<%= require('./assets/img/header-bg-2x.png') %> 1x, <%= require('./assets/img/header-bg-2x.png') %> 2x"
+              data-speed="0.2"
+              alt="fond étoilé du générique Star Wars">
+          <div class="home__intro-container">
+            <img class="home__intro-logo parallax"
+            src="<%= require('./assets/img/logo.png') %>"
+            data-speed="-0.3"
+            alt="logo Star Wars">
+          </div>
+        </div>
+        <div class="home__intro-content container">
+          <article id="swIntro" class="two-col">
+            <div>
+                <h2 class="main-subtitle">Star Wars, The Force Awakens</h2>
+                <p class="main-text">
+                  Plus de 30 ans après la bataille d'Endor, la galaxie n'en a pas fini avec la tyrannie et l’oppression.
+                  Les membres de l'Alliance rebelle, devenus la « Résistance », combattent les vestiges de l'Empire réunis sous la bannière du « Premier Ordre ».</p>
+
+                  <p class="main-text">
+                    Un mystérieux guerrier, Kylo Ren, semble vouer un culte à Dark Vador et pourchasse les ennemis du Premier Ordre à travers la galaxie.
+                    Au même moment, une jeune femme nommée Rey, pilleuse d'épaves sur la planète désertique Jakku, va faire la rencontre de Finn, un Stormtrooper en fuite, une rencontre qui bouleversera sa vie.</p>
+                  
+                    <p class="main-text">Plus de 30 ans après la bataille d'Endor, la galaxie n'en a pas fini avec la tyrannie et l’oppression.
+                      Les membres de l'Alliance rebelle, devenus la « Résistance », combattent les vestiges de l'Empire réunis sous la bannière du « Premier Ordre ».</p>
+                  
+                    <p class="main-text">Un mystérieux guerrier, Kylo Ren, semble vouer un culte à Dark Vador et pourchasse les ennemis du Premier Ordre à travers la galaxie.
+                      Au même moment, une jeune femme nommée Rey, pilleuse d'épaves sur la planète désertique Jakku, va faire la rencontre de Finn, un Stormtrooper en fuite, une rencontre qui bouleversera sa vie.</p>
+
+                    <p class="main-text">Plus de 30 ans après la bataille d'Endor, la galaxie n'en a pas fini avec la tyrannie et l’oppression.
+                      Les membres de l'Alliance rebelle, devenus la « Résistance », combattent les vestiges de l'Empire réunis sous la bannière du « Premier Ordre ».</p>
+                  
+                    <p class="main-text">Un mystérieux guerrier, Kylo Ren, semble vouer un culte à Dark Vador et pourchasse les ennemis du Premier Ordre à travers la galaxie.
+                      Au même moment, une jeune femme nommée Rey, pilleuse d'épaves sur la planète désertique Jakku, va faire la rencontre de Finn, un Stormtrooper en fuite, une rencontre qui bouleversera sa vie.</p>
+                
+            </div>
+            <img id="adImg" class="sticky" src="<%= require('./assets/img/ad.jpg') %>" alt="pochette du jeu vidéo Star Wars Battlefront">
+          </div>
+        </div>
+      </section>
+      <section class="home__description">
+        <div id="bgImg2">
+          <img 
+          src="<%= require('./assets/img/kiloren.jpg') %>"
+          srcset="<%= require('./assets/img/kiloren.jpg') %> 1x, <%= require('./assets/img/kiloren-2x.jpg') %> 2x"
+          alt="Kylo ren, personnage de star wars">
+        </div>
+        <div class="home__description-content container">
+          <h3 class="main-title">A long time ago, in a galaxy far, far away…</h3>
+          <article>
+              <img 
+              src="<%= require('./assets/img/r2d2_c3p0-2x.jpg') %>"
+              srcset="<%= require('./assets/img/r2d2_c3p0.jpg') %> 1x, <%= require('./assets/img/r2d2_c3p0-2x.jpg') %> 2x"
+              alt="R2D2 accompagné de C-3PO"
+              >
+              <p class="main-text"><i class="bolded">La Guerre des étoiles</i> (titre original <i class="bolded">Star Wars</i>, soit littéralement Guerres Stellaires ) est une épopée cinématographique de science-fiction créée par George Lucas, considérée comme un élément phare du space opera. Prévue à la base pour être une suite de trois trilogies (triptyque), Lucas fut contraint, par manque de moyens techniques, de commencer par la seconde trilogie (<i class="bolded">l'Épisode IV - Un nouvel espoir</i>) en 1977. La série connut un succès phénoménal partout dans le monde et engendra une très importante communauté de fans.
+                Sans prétendre expliquer le succès du premier film (s'il y avait une recette, cela se saurait), on peut, toutefois, noter que, malgré le manque de moyens (le budget était relativement modeste, les acteurs presque inconnus) :</p>
+                <p class="main-text">
+                - Il fait appel à des références connues et appréciées des jeunes de l'époque : films de cape et d'épée, westerns, péplums, contes de fées et même <i class="bolded">le Seigneur des Anneaux</i> de J.R.R. Tolkien ; cette œuvre n'apparaît pas comme de la science-fiction au sens strict mais plutôt comme du space fantasy.<br>
+                - Les effets spéciaux, supervisés par Ken Ralston, étaient réellement novateurs, avec notamment la participation de John Dykstra (qui a également participé au premier film de <i class="bolded">Star Trek</i>), qui avait développé une nouvelle manière d'animer les maquettes des vaisseaux en coordonnant leurs mouvements par ordinateur (Dykstraflex).<br>
+                - Le film a développé un univers cohérent, avec, comme préoccupation constante, autant la création d'une ambiance que l'action proprement dite.<br>
+                - La musique, composée par John Williams, introduit des thèmes récurrents et des leitmotivs (procédé classique mais renforçant la cohérence).</p>
+            </article>
+        </div>
+      </section>
+      <section style="position: relative;">
+        <div id="bgImg3">
+          <img id="Img3" 
+              src="<%= require('./assets/img/stormtroopers.jpg') %>"
+              srcset="<%= require('./assets/img/stormtroopers.jpg') %> 1x, <%= require('./assets/img/stormtroopers-2x.jpg') %> 2x"
+              alt="armée de stormtroopers">
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main__footer">
+      <small><span>TM Lucasfilm</span> Ltd. All Rights Reserved.</small>
+      <div class="main__footer-content">
+        <ul class="main__footer-list">
+          <li class="main__footer-item"><a href="#">Terms of Use</a></li>
+          <li class="main__footer-item"><a href="#">Your California Privacy Rights</a></li>
+          <li class="main__footer-item"><a href="#">Legal Notices</a></li>
+          <li class="main__footer-item"><a href="#">Star Wars at Disney Store</a></li>
+          <li class="main__footer-item"><a href="#">Privacy Policy</a></li>
+          <li class="main__footer-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="main__footer-social">
+          <p>Follow star wars</p>
+          <ul class="footer-social-list">
+            <li class="footer-social-item"><a href="#"><img src="<%= require('./assets/img/logo_fb.png') %>" alt="logo facebook"></a></li>
+            <li class="footer-social-item"><a href="#"><img src="<%= require('./assets/img/logo_x.png') %>" alt="logo x twitter"></a></li>
+            <li class="footer-social-item"><a href="#"><img src="<%= require('./assets/img/logo_ig.png') %>" alt="logo instagram"></a></li>
+          </ul>
+        </div>
+    </div>
+    </footer>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <!-- SCRIPTS -->
+    <script src="index.js" async defer></script>
+  </body>
+</html>

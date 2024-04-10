@@ -1,0 +1,92 @@
+// REINITILIZATION
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// IMPORT
+@import 'normalize';
+@import 'mediaqueries';
+@import 'home';
+@import 'header';
+@import 'footer';
+
+// VARIABLES
+$mainTextColor: #000;
+$mainFontSize: 1rem;
+$smallFontSize: .9rem;
+
+// MAIN
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  margin: 8vh 7vw;
+  @include for-small-devices() {
+    margin: 4vh 7vw;
+  }
+}
+
+.bolded {
+  font-weight: 600;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: auto;
+  column-gap: 6rem;
+  @include for-small-devices() {
+    grid-template-columns: 100%;
+  }
+}
+
+.main-text {
+  font-family: sans-serif;
+  color: $mainTextColor;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: .5rem;
+  @include for-small-devices() {
+    margin: 0;
+  }
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main-subtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: left; 
+  @include for-small-devices() {
+    margin: 0 0 .75rem 0;
+    text-align: center;
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 7vh;
+}
+
+/** KEYFRAME ANIMATIONS **/ 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

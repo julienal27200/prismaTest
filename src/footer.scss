@@ -1,0 +1,81 @@
+/*** Footer SASS File ***/
+
+// VARIABLES
+$footerTextColor: #9b9b9b;
+$smallFontSize: .9rem;
+
+.main__footer {
+  width: 100%;
+  background: url('./../build/img/darthvader_2x.ef3780.jpg') center center no-repeat #181818;
+  background-size: contain;
+  color: $footerTextColor;
+  text-align: center;
+  padding: 3rem 0;
+  small {
+    display: block;
+    margin-bottom: 1rem;
+    span {
+      font-weight: 600;
+    }
+    @include for-small-devices() {
+      display: none;
+    }
+  }
+  .main__footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2vh 7vw; 
+    @include for-small-devices() {
+      grid-template-columns: none;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 15px;
+      margin: 2vh 2vw; 
+    }
+  }
+  .main__footer-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .main__footer-item {
+      font-size: .8rem;
+      margin: .5rem;
+      a {
+        color: $footerTextColor;
+        transition: .3s;
+          &:hover {
+            color: #fff;
+          }
+      }
+    }
+  }
+  .main__footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: $smallFontSize;
+    text-transform: uppercase;
+    .footer-social-list {
+      padding: 0;
+      list-style: none;
+      .footer-social-item {
+        display: inline-block;
+        a {
+          img {
+            width: 24px;
+            height: auto;
+            margin: .5rem;
+          }
+        }
+      }
+    }
+    @include for-small-devices() {
+      flex-direction: row;
+      column-gap: 30px;
+    }
+  }
+  @include for-small-devices() {
+    padding: 1rem 0;
+  }
+}

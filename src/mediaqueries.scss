@@ -1,0 +1,22 @@
+/*** MIXIN ONLY FOR RESPONSIVE MEDIA QUERIES ****/
+@mixin for-Xsmall-devices {
+  @media (max-width: 575.98px) { @content; }
+}
+@mixin for-small-devices {
+  @media (max-width: 767.98px) { @content; }
+}
+@mixin for-medium-devices {
+  @media (max-width: 991.98px) { @content; }
+}
+@mixin for-large-devices {
+  @media (max-width: 1199.98px) { @content; }
+}
+@mixin for-Xlarge-devices {
+  @media (max-width: 1249.98px) { @content; }
+}
+@mixin for-XXlarge-devices {
+  @media (min-width: 1250px) { @content; }
+}
+@mixin for-4k-devices {
+  @media (min-width: 2400px) { @content; }
+}
